@@ -147,3 +147,21 @@ If you think there is something wrong with the testing software, ask a mentor to
 A mentor can tell you whether the testing software is wrong or whether you are, but cannot tell you the answer.
 
 If you find a test that is not working correctly, or that you think is testing incorrectly, please create an issue on Github.
+
+## Contributions
+
+### Contributions
+
+#### 
+ 
+If you see a problem or a typo, please fork, make the necessary changes, and create a pull request so we can review your changes and merge them into the master repo and branch.
+
+## Copyright
+
+### Copyright
+
+#### 
+
+© DevMountain LLC, 2017. Unauthorized use and/or duplication of this material without express and written permission from DevMountain, LLC is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to DevMountain with appropriate and specific direction to the original content.
+
+<img src="https://devmounta.in/img/logowhiteblue.png" width="250">
