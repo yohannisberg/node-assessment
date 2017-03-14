@@ -79,14 +79,16 @@ test('getUsersByAgeLimit', t => {
   })
 })
 
-test('findUserByQuery : type', t => {
-  let result = userCtrl.findUserByQuery('type', 'moderator');
+test('findUserByQuery : last_name', t => {
+  let result = userCtrl.findUserByQuery('last_name', 'Stone');
+  
+  t.plan(3);
 
   t.truthy(result)
   t.true(Array.isArray(result))
 
   result.forEach(user => [
-    t.is(user.type, 'moderator')
+    t.is(user.last_name, 'Stone')
   ])
 })
 

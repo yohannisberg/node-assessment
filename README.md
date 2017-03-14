@@ -65,10 +65,10 @@ After this function runs, the user with an id of 1 will have a **first_name** of
 
 ## User Controller
 
-`userCtrl.js`. 
+`userCtrl.js`.
 
 Be sure to follow the instructions for each problem closely.
-**You should not be using req or res inside `userCtrl.js`.** 
+**You should not be using req or res inside `userCtrl.js`.**
 
 1. Get All Users.
   -Write a function called readAll that will return all users from the users module.
@@ -82,15 +82,17 @@ Be sure to follow the instructions for each problem closely.
   -The function getUsersByFavorite will take in a favorite as a string, and use it to return all users with that favorite in their favorites array. If none are found, return null.
 6. Get all users with age under given age.
   -Write a function, getUsersByAgeLimit, that will take in an age and return all users under the age provided. If none are found, it will return null.
-7. Get User By Last Name.
-  -Write a function called findUserByQuery. This function will take in two parameters: a query term and the value. If the query term is 'last_name', the function will use the value parameter to return the user (or users) with that last name. Make sure that the search is case-insensitive. If the user is not found, return null.
+7. Get User By last_name.
+  -Write a function called findUserByQuery. This function will take in two parameters: a query term and the value. If the query term is 'last_name', the function will use the value parameter to return the user (or users) with that last_name. Make sure that the search is case-insensitive. If the user is not found, return null.
 8. Get User By Email.
   -Adjust findUserByQuery to search for a user by email, if the query term equals 'email'. Again, it will search using the value parameter, return that found user, or if not found, return null.
-9. Add new user.
+9. Get User By State.
+  -Adjust findUserByQuery once more to also search for user by state if the query term equals 'state'.  It will search using the value parameter, and return the user (or users) from that state.  If no users are found it should return null.
+10. Add new user.
   -Write a function, createUser, that takes a user object as a parameter to the users module. Create a user using this object. Remember, the users module will generate an id itself, so you don't have to. If the user is not in the correct format, the users module will give you an error. If there is an error from the users module, return null. Otherwise, return the new user (with automatically generated id).
-10. Update user by ID.
+11. Update user by ID.
   -Write a function called updateUser which will take in a userId and an object. The object will contain the properties that need to be changed, along with their new values. Find a user by the id, then update it, changing only those properties sent in the object. Return the updated user.
-11. Delete a user by ID.
+12. Delete a user by ID.
   -Your function, removeUser, should take in a userId, find a user by that id, then use the user module's remove functionality to delete the user. Return the deleted item.
 
 ## Endpoints
@@ -152,15 +154,15 @@ If you find a test that is not working correctly, or that you think is testing i
 
 ### Contributions
 
-#### 
- 
+####
+
 If you see a problem or a typo, please fork, make the necessary changes, and create a pull request so we can review your changes and merge them into the master repo and branch.
 
 ## Copyright
 
 ### Copyright
 
-#### 
+####
 
 © DevMountain LLC, 2017. Unauthorized use and/or duplication of this material without express and written permission from DevMountain, LLC is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to DevMountain with appropriate and specific direction to the original content.
 
