@@ -82,8 +82,8 @@ Be sure to follow the instructions for each problem closely.
   -The function getUsersByFavorite will take in a favorite as a string, and use it to return all users with that favorite in their favorites array. If none are found, return null.
 6. Get all users with age under given age.
   -Write a function, getUsersByAgeLimit, that will take in an age and return all users under the age provided. If none are found, it will return null.
-7. Get User By Type.
-  -Write a function called findUserByQuery. This function will take in two parameters: a query term and the value. If the query term is 'type', the function will use the value parameter to return the user (or users) with that type. Make sure that the search is case-insensitive. If the user is not found, return null.
+7. Get User By last_name.
+  -Write a function called findUserByQuery. This function will take in two parameters: a query term and the value. If the query term is 'last_name', the function will use the value parameter to return the user (or users) with that last_name. Make sure that the search is case-insensitive. If the user is not found, return null.
 8. Get User By Email.
   -Adjust findUserByQuery to search for a user by email, if the query term equals 'email'. Again, it will search using the value parameter, return that found user, or if not found, return null.
 9. Get User By State.
