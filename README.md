@@ -41,7 +41,7 @@ So don't put an id on a new user!
 * Takes in a key and a value
 * Returns the first user where the key matches the value
 * Example:
-```
+```javascript
 users.findOne('id', 1) // User object with an id of 1;
 ```
 
@@ -58,7 +58,7 @@ users.findOne('id', 1) // User object with an id of 1;
 * Takes in a key, a value, and an object with some keys and values.
 * The keys and values in the object passed to update will be merged into the first user found matching key and value.
 * Example:
-```
+```javascript
   users.update('id', 1, {first_name: 'Brett', last_name: 'Internet');
 ```
 After this function runs, the user with an id of 1 will have a **first_name** of **Brett** and a **last_name** of **Internet**
