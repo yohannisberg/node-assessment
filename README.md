@@ -59,7 +59,7 @@ users.findOne('id', 1) // User object with an id of 1;
 * The keys and values in the object passed to update will be merged into the first user found matching key and value.
 * Example:
 ```javascript
-  users.update('id', 1, {first_name: 'Brett', last_name: 'Internet');
+  users.update('id', 1, {first_name: 'Brett', last_name: 'Internet'});
 ```
 After this function runs, the user with an id of 1 will have a **first_name** of **Brett** and a **last_name** of **Internet**
 
