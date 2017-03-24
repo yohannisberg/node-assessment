@@ -70,6 +70,16 @@ After this function runs, the user with an id of 1 will have a **first_name** of
 Be sure to follow the instructions for each problem closely.
 **You should not be using req or res inside `userCtrl.js`.**
 
+Example:
+```javascript
+module.exports ={
+  methodName: function(/*Parameters here if input is needed*/) {
+    // Find/Add/Update/Delete something
+    return somethingArray; // Or null if it is required.
+  }
+}
+```
+
 1. Get All Users.
   -Write a function called readAll that will return all users from the users module.
 2. Get User By Id.
@@ -100,6 +110,15 @@ Be sure to follow the instructions for each problem closely.
 
 Once you are finished with your controller, write endpoints that will accept the test's requests.
 You are expected to use the method above associated with each endpoint:
+
+Example:
+```javascript
+app.get('url', function(req, res) {
+  var response = userCtrl.methodName(/*arguments if needed. eg: req.params.id*/);
+
+  res.status(/*status needed to make test work*/).send(response);
+});
+```
 
 1. `'GET' /api/users`
 Respond with an array of all users, with status 200.
